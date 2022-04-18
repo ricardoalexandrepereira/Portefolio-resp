@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/style.css">
     <link rel="icon" type="image/png" href="#">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>Ricardo Pereira</title>
 </head>
@@ -52,15 +51,15 @@
                      Habilidades</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-file-earmark"></i>
+                  <a class="nav-link" href="#Curriculum"><i class="bi bi-file-earmark"></i>
                      Curriculum</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-collection"></i>
+                  <a class="nav-link" href="#portefolio"><i class="bi bi-collection"></i>
                      Portfólio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-envelope"></i> Contato</a>
+                  <a class="nav-link" href="#contato"><i class="bi bi-envelope"></i> Contato</a>
                 </li>
                 
               </ul>
@@ -282,11 +281,247 @@
             </div>
         </section>
 
+        <section class="mt-5 cv" id="Curriculum">
+
+            <div class="container pb-2">
+                <h2 class="pt-3 pb-4">Curriculum</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="cv-title">Educação</h3>
+                        <div class="cv-item">
+                            <h4>arte design e industria</h4>
+                            <h5>1999 - 2002</h5>
+                            <p><em>casa pia de lisboa</em></p>
+                            <p>curso avançado voltado a área do design com foco na 
+                                industria gráfica e suas tecnologias. 
+                            </p>
+                        </div>
+                        <div class="cv-item">
+                            <h4>Curso avançado em sistemas de informação</h4>
+                            <h5>2002 - 2005</h5>
+                            <p><em>Citeforma</em></p>
+                            <p>Recebi conceitos e técnicas de informatica e teoria de sistemas para contribuir na
+                                solução de problemas de tratamento de informação nas organizações por meio da construção
+                                de modelos de automação corporativa.
+                            </p>
+                        </div>
+                        
+                        <div class="cv-item">
+                            <h4>web Development</h4>
+                            <h5>2020 - 2021</h5>
+                            <p><em>Master D</em></p>
+                            <p>Curso voltado para a programação web, design e layouts em diversos programas e bibliotecas
+                                front-end. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="cv-title">Profissional</h3>
+                        <div class="cv-item">
+                            <h4>informático</h4>
+                            <h5>2005 - 2006</h5>
+                            <p><em>Lusolabs</em></p>
+                            <p>Segurança Informática, Gestão de Sistemas de Informação, Multimédia e Webdesign 
+                            </p>
+                        </div>
+                        <div class="cv-item">
+                            <h4>informático</h4>
+                            <h5>2007 - 2008</h5>
+                            <p><em>Aki</em></p>
+                            <p>configuração de sistemas informaticos e manutenção  
+                            </p>
+                        </div>
+                        <div class="cv-item">
+                            <h4>impressor gráfico</h4>
+                            <h5>2009 - 2021</h5>
+                            <p><em>Olegário Fernandes</em></p>
+                            <p>impressão de conteudo de rotolagem de farmaceuticas em software boobst
+                                operacional em industria.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portefolio" class="section-bg mt5">
+            <div class="container pb-5 pt-5">
+
+                <h2 class="pb-4s">Portefolio</h2>
+
+                <div id="carouselportefolio" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselportefolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselportefolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      
+                    </div>
+                    <div class="carousel-inner">
+
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                            <div class="col">
+                                <div class="card">
+                                <img src="../static/img/b1.jpg" class="card-img-top" alt="b1">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <div class="d-flex justify-content-center">
+                                      <a href="#" target="_blank" class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col">
+                              <div class="card">
+                                <img src="../static/img/b2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <div class="d-flex justify-content-center">
+                                    <a href="#" target="_blank" class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col">
+                              <div class="card">
+                                <img src="../static/img/b3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                  <div class="d-flex justify-content-center">
+                                    <a href="#" target="_blank" class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                            <div class="col">
+                                <div class="card">
+                                <img src="../static/img/b1.jpg" class="card-img-top img-fluid w-100" alt="b1">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <div class="d-flex justify-content-center">
+                                      <a href="#" target="_blank" class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col">
+                              <div class="card">
+                                <img src="../static/img/b2.jpg" class="card-img-top img-fluid w-100" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <div class="d-flex justify-content-center">
+                                    <a href="#" target="_blank" class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col">
+                              <div class="card">
+                                <img src="../static/img/b3.jpg" class="card-img-top img-fluid w-100" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                  <div class="d-flex justify-content-center">
+                                    <a href="#" target="_blank" class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>
+
+
+                      </div>
+                     
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselportefolio" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselportefolio" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+
+            </div>
+        </section>
+
+        <section class="pt-5 pb-5" id="contato">
+
+            <div class="container mb-5">
+                <h2 class="pt-3 pb-3">Contato</h2>
+                <div class="row">
+
+                <div class="col-md-5">
+                    <div class="card p-5 shadow border-0">
+                        <div class="endereco">
+                            <h4><i class="bi bi-geo-alt"></i> Localização:</h4>
+                            <p>Lisboa, Montijo</p>
+                        </div>
+                        <div class="email">
+                            <h4><i class="bi bi-envelope"></i> Email:</h4>
+                            <p>ricardo_certe@hotmail.com</p>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49816.396574934006!2d-9.025847275268092!3d38.70575885808201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1939eb3ac02dd7%3A0x42cc94a7d11be406!2sMontijo!5e0!3m2!1spt-PT!2spt!4v1650298821692!5m2!1spt-PT!2spt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-7 mt-5 mt-md-0">
+                    <div class="card p-5 h-100 shadow border-0">
+
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                              <label for="nome" class="form-label">Name:</label>
+                              <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="Email" class="form-label">Email:</label>
+                              <input type="Email" class="form-control" id="Email" name="Email" placeholder="Email">
+                            </div>
+                            
+                            <div class="col-12">
+                              <label for="mensagem" class="form-label">Mensagem:</label>
+                              <textarea type="text" class="form-control" id="mensagem" placeholder="type your message" name="mensagem" rows="10"></textarea>
+                            </div>
+                            
+                            <div class="col-12 d-flex justify-content-center mt-4">
+                              <button type="submit" class="btn btn-primary">send</button>
+                            </div>
+
+                          </form>
+                    </div>
+                </div>    
+
+
+                </div>
+            </div>
+
+        </section>
+
     </main>
 
 
 
-    <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="../static/script.js"></script>
 </body>
 </html>
