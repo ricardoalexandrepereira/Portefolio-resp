@@ -488,24 +488,31 @@
                 <div class="col-md-7 mt-5 mt-md-0" data-anime="left">
                     <div class="card p-5 h-100 shadow border-0">
 
-                        <form class="row g-3">
+                        <form class="row g-3" action="/send" method="POST">
                             <div class="col-md-6">
                               <label for="nome" class="form-label">Name:</label>
-                              <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+                              <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required>
                             </div>
                             <div class="col-md-6">
-                              <label for="Email" class="form-label">Email:</label>
-                              <input type="Email" class="form-control" id="Email" name="Email" placeholder="Email">
+                              <label for="email" class="form-label">Email:</label>
+                              <input type="email" class="form-control" id="email" name="email" placeholder="email" required>
                             </div>
                             
                             <div class="col-12">
                               <label for="mensagem" class="form-label">Mensagem:</label>
-                              <textarea type="text" class="form-control" id="mensagem" placeholder="type your message" name="mensagem" rows="10"></textarea>
+                              <textarea type="text" class="form-control" id="mensagem" placeholder="type your message" name="mensagem" rows="10" required></textarea>
                             </div>
                             
                             <div class="col-12 d-flex justify-content-center mt-4">
-                              <button type="submit" class="btn btn-primary">send</button>
+                              <button id="btn-enviar" type="submit" class="btn btn-primary">send</button>
+
+                              <button id="btn-enviar-loader"class="btn btn-primary" type="button" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Sending...
+                              </button>
                             </div>
+
+                            
 
                           </form>
                     </div>
@@ -517,8 +524,27 @@
 
         </section>
 
-    </main>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+            <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill"></i>{{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+        
+        </main>
 
+        <footer id="footer">
+            <div id="containerFooter" class="container">
+                <div class="text-center">
+                    &copy; Copyright Ricardo pereira
+                </div>
+            </div>
+
+        </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
