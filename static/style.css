@@ -21,11 +21,12 @@ html, body{
     z-index: 9997;
 }
 #header .profile img{
-    margin:15px auto;
+    margin:10px auto;
     display: block;
-    width: 120px;
-    border: 8px solid #2c2f3f;
+    width: 150px;
+    /*border: 5px solid #2c2f3f;*/
     border-radius: 50%;
+    
 
 }
 #header .profile h1{
@@ -36,15 +37,17 @@ html, body{
     text-align: center;
     color: #fff;
 }
+
 #header .profile .social-links a{
     font-size: 1rem;
     background: #212431;
     color: #fff;
-    padding: 0.6rem;
+    padding: 0.5rem 0.7rem;
     margin-right: 1rem;
     border-radius: 50%;
     transition: 0.3s;
     text-decoration: none;
+    display:inline-block;
 
 }
 #header .profile .social-links a:hover{
@@ -65,7 +68,10 @@ html, body{
 .nav-menu a:focus i{
     font-size: 24px;
     padding-right: 0.8rem;
+    padding-left: 0.8rem;
+
     color:#6f7180;
+    text-align: center;
 }
 .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a{
     text-decoration: none;
@@ -274,15 +280,18 @@ i.menu-mobile{
     left: 0;
     bottom: 0;
     width:300px;
+    height: 60px;
     z-index: 9999;
     background-color: #021124;
     transition: .3s;
+    
+   
 }
 
 @media (max-width:1012px){
     #footer{
         position: static;
         width: auto;
-        padding: 20px 15px;
+        padding: 0px 15px;
     }
 }
