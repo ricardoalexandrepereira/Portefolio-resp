@@ -57,3 +57,11 @@ btnEnviar.addEventListener('click',()=>{
 setTimeout(()=>{
     document.querySelector('#alerta').style.display = 'none';
 },5000)
+
+
+
+var text = document.getElementById('text');
+addEventListener('scroll', function(){
+    var value = scrollY;
+    text.style.marginBottom = value * 3 +'px';
+})
