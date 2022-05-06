@@ -63,5 +63,5 @@ setTimeout(()=>{
 var text = document.getElementById('text');
 addEventListener('scroll', function(){
     var value = scrollY;
-    text.style.marginBottom = value * 3 +'px';
+    text.style.marginBottom = value * 4 +'px';
 })

@@ -348,7 +348,7 @@ i.menu-mobile{
 }
 #text{
     position: absolute;
-    top: 200px;
+    top: 300px;
 }
 .banner #text{
     position: relative;
@@ -356,10 +356,9 @@ i.menu-mobile{
     color:#eef0f3;
     font-family: aladin;
     font-style: italic;
-font-weight:100;
-
-text-shadow: 1px 1px 1px rgb(2, 17, 36),1px 1px 1px rgb(2, 17, 36),
-1px 1px 10px rgb(2, 17, 36),1px 1px 1px rgb(2, 17, 36);
+    font-weight:100;
+    text-shadow: 1px 1px 1px rgb(2, 17, 36),1px 1px 1px rgb(2, 17, 36),
+    1px 1px 10px rgb(2, 17, 36),1px 1px 1px rgb(2, 17, 36);
 
 }
 .banner .clouds{
