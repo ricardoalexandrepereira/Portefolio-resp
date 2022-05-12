@@ -51,7 +51,7 @@ def send():
             '''
         )
         mail.send(msg)
-        flash('mensagem enviada com sucesso!')
+        flash('message sent successfully!')
     return redirect('/')
 
 if __name__ == '__main__':
