@@ -115,7 +115,7 @@ html, body{
     margin-left: 300px;
 }
 section#inicio{
-    background-image: url(./img/rictravel.jpg);
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -136,10 +136,12 @@ section#inicio span#subtitle{
 }
 section#inicio div#arraste{
     width: 9rem;
+    z-index: 100;
 }
 section#inicio div#arraste a{
     text-decoration: none;
-    color:#fff
+    color:#fff;
+    z-index: 100;
 }
 i.menu-mobile{
     position: fixed;
@@ -323,6 +325,33 @@ i.menu-mobile{
    
 }
 
+
+
+
+/*three*/
+
+.banner{
+    
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding: 0;
+    overflow-x:hidden;
+}
+.intro{
+    position:absolute;
+    top:6em;
+    left:8em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    line-height: 1em;
+    border: 3px solid black;
+    padding:  .2em;
+
+}
+
+
 @media (max-width:1012px){
     #footer{
         
@@ -330,66 +359,15 @@ i.menu-mobile{
         width: auto;
         padding: 0px 15px;
     }
-}
+    .banner h1.intro{
+        font-size: 3rem;
+        display: flex;
+        top:30%;
+        left:10%;
+        width: 300px;
+        font-size: 2rem;
+        
+       
 
-
-/*louds*/
-
-.banner{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    
-    background-size: cover;
-    background-position: bottom;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-#text{
-    position: absolute;
-    top: 300px;
-}
-.banner #text{
-    position: relative;
-    font-size: 5em;
-    color:#eef0f3;
-    font-family: aladin;
-    font-style: italic;
-    font-weight:100;
-    text-shadow: 1px 1px 1px rgb(2, 17, 36),1px 1px 1px rgb(2, 17, 36),
-    1px 1px 10px rgb(2, 17, 36),1px 1px 1px rgb(2, 17, 36);
-
-}
-.banner .clouds{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none;
-     }
-     .banner .clouds img{
-     position: absolute;
-     bottom: 0;
-     max-width: 100%;
-     animation: animate calc(3s * var(--i)) linear infinite;
-    }
-    @keyframes animate 
-    {
-        0%
-    {
-        opacity: 0;
-        transform: scale(1);
-    }
-    25%,75%
-    {
-          opacity:1 ;
-    }
-    100%
-    {
-        opacity: 0;
-        transform: scale(3);
     }
 }
