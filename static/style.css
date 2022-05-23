@@ -84,7 +84,7 @@ html, body{
         
         }
 .nav-menu{
-    padding: 1.5rem;
+    padding: 1.1rem;
 }
 .nav-menu a,
 .nav-menu a:focus{
@@ -338,7 +338,7 @@ i.menu-mobile{
     padding: 0;
     overflow-x:hidden;
 }
-.intro{
+h1.intro{
     position:absolute;
     top:6em;
     left:8em;
@@ -346,7 +346,7 @@ i.menu-mobile{
     font-size: 3em;
     text-transform: uppercase;
     line-height: 1em;
-    border: 3px solid black;
+    border: 3px solid rgb(2, 17, 36);
     padding:  .2em;
 
 }
