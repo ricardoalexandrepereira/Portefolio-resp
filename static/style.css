@@ -4,6 +4,7 @@ html, body{
     font-family: 'Lora', serif;
     width: 100%;
     height: 100%;
+    
 }
 .container{
     padding: 0px 100px;
@@ -168,6 +169,60 @@ i.menu-mobile{
     left: 0;
 }
 
+/* tag cloud*/
+.Sphere .tagcloud {
+    display: inline-block;
+    margin: 0px;
+    
+    
+}
+
+.Sphere{
+    position: relative;
+    width: 80%;
+    height: auto;
+    left: 15%;
+    top:0;
+   
+    
+}
+.tagcloud{
+    
+position: absolute;
+
+
+   
+}
+ul {
+    display: inline-block;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+.tagcloud {
+    top:0%;
+    left: 10%;
+    font-size: 20px;
+   
+}
+
+.tagcloud--item {
+    padding: 2px 4px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+/* tag cloud*/
+
 
 @media (max-width: 1024px){
     #header{
@@ -189,6 +244,7 @@ i.menu-mobile{
     #main{
         margin-left: 0;
     }
+   
 }
 
 *::-webkit-scrollbar{
@@ -366,11 +422,26 @@ h1.intro{
         left:10%;
         width: 300px;
         font-size: 2rem;
-        
-       
 
     }
+    
+    }
+
+@media (max-width:900px){
+   
+.Sphere{
+  width: 300px;
+  height: auto;
+  left: 0;
+}
+.tagcloud{
+    width: auto;
+  height: auto;
+  left:0;
+ 
+}
 }
 #A,#G,#W,#S,#C,#E,#P{
     color:rgb(167, 6, 6);
 }
+ 

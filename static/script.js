@@ -157,3 +157,25 @@ render()
 
 
 window.addEventListener('mousemove', onMouseMove)
+
+
+
+
+var texts = [
+    'HTML', 'CSS', 'JAVASCRIPT',
+    'BOOTSTRAP', 'NODEJS', 'SASS',
+    'EJS', 'HANDLEBARS', 'MONGODB',
+    'REACT', 'FIGMA' , 'WORDPRESS', 
+    'GIT', 'EXPRESS',
+];
+var tc = TagCloud('.Sphere', texts,{
+    radius:200, 
+    maxSpeed:'normal',
+    initSpeed:'normal',
+    direction:135,
+    keep:true,
+    
+
+});
+var color = '#071a31'
+document.querySelector('.Sphere').style.color = color
