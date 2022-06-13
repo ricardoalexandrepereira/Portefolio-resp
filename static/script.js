@@ -163,10 +163,10 @@ window.addEventListener('mousemove', onMouseMove)
 
 var texts = [
     'HTML', 'CSS', 'JAVASCRIPT',
-    'BOOTSTRAP', 'NODEJS', 'SASS',
-    'EJS', 'HANDLEBARS', 'MONGODB',
-    'REACT', 'FIGMA' , 'WORDPRESS', 
-    'GIT', 'EXPRESS',
+    'BOOTSTRAP', 'NODE js', 'SASS',
+    'EJS', 'HANDLEBARS', 'MONGO DB',
+    'REACT js', 'FIGMA' , 'WORDPRESS', 
+    'GIT', 'EXPRESS', 'FIREBASE'
 ];
 var tc = TagCloud('.Sphere', texts,{
     radius:200, 
