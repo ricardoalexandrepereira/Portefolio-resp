@@ -78,7 +78,7 @@ var scene = new THREE.Scene();
     camera.position.z = 5;
 
     var renderer = new THREE.WebGLRenderer({antialias:true});
-    renderer.setClearColor("#e5e5e5");
+    renderer.setClearColor("#090009");
     renderer.setSize(window.innerWidth,window.innerHeight);
 
     banner.appendChild(renderer.domElement)
@@ -96,7 +96,7 @@ var scene = new THREE.Scene();
 
 
     var geometry = new THREE.BoxGeometry(1, 1, 1);
-    var material = new THREE.MeshLambertMaterial({color: 0xF7F7F7})
+    var material = new THREE.MeshLambertMaterial({color: 0xE2740E})
     var mesh = new THREE.Mesh(geometry, material);
     
     scene.add(mesh)

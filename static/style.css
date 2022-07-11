@@ -14,7 +14,7 @@ html, body{
     top:0;
     left: 0;
     bottom: 0;
-    background-color: #021124;
+    background:#090009;
     overflow-y: auto;
     width: 300px;
     transition: all ease-in-out 0.5s;
@@ -25,7 +25,7 @@ html, body{
     margin:10px auto;
     display: block;
     width: 150px;
-    /*border: 5px solid #2c2f3f;*/
+    /*border: 5px solid #E2740E;*/
     border-radius: 50%;
     
 
@@ -41,7 +41,7 @@ html, body{
 
 #header .profile .social-links a{
     font-size: 1rem;
-    background: #212431;
+    background: #f7b527;
     color: #fff;
     padding: 0.5rem 0.7rem;
     margin-right: 1rem;
@@ -67,7 +67,7 @@ html, body{
     margin-top: -90px;
     top: 0;
     left: 0;
-    background-image: linear-gradient(45deg, rgb(253, 176, 176), #149ddd);
+    background-image: linear-gradient(45deg, rgb(248, 247, 247), #149ddd);
     position: absolute;
     transition: 0.5s;
     }
@@ -101,7 +101,7 @@ html, body{
     padding-right: 0.8rem;
     padding-left: 0.8rem;
 
-    color:#6f7180;
+    color:#f7b527;
     text-align: center;
 }
 .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a{
@@ -110,10 +110,25 @@ html, body{
 }
 
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i{
-    color: #149ddd;
+    color: #ffffff;
 }
 #main{
     margin-left: 300px;
+}
+#sobre{
+    background-color: #090009;
+    color:#f7b527;
+}
+#me ul li,#me2 ul li{
+    background-color:#090009;
+    color:#f7b527;
+}
+#me ul li, #me2 ul li {
+    color:#84c2df;
+    
+}
+#me ul li small, #me2 ul li small, #me2 ul li a {
+    color:#f7b527;
 }
 section#inicio{
     
@@ -142,12 +157,79 @@ section#inicio div#arraste{
 section#inicio div#arraste a{
     text-decoration: none;
     color:#fff;
-    z-index: 100;
+    z-index: -1;
+
+}
+#habilidades{
+    
+    background: linear-gradient(to left,#f7b527,#090009);
+    color:#fff;
+}
+
+
+#Curriculum{
+    background-color: #090009;
+    color: #f7b527;
+    padding-bottom: 50px;
+}
+.carousel-inner{
+    margin-top: 50px;
+    
+}
+.card{
+    border:none;
+    
+}
+.card input, .card textarea{
+    background-color: #090009;
+    border: none;
+    border-bottom:.5px solid #f7b527;
+}
+.card-title{
+    color:#149DDD;
+    
+}
+.card-text{
+    color: #f7b527;
+}
+#portefolio{
+    background-color: #090009;
+    color: #f7b527;  
+    
+}
+.carousel-control-next-icon{
+    color: #f7b527;
+    background-color: #f7b527;
+    box-shadow: 0 0 30px 2px #f7b527;
+    border-radius: 50%;
+    
+}
+.carousel-control-prev-icon{
+    color: #f7b527;
+    background-color: #f7b527;
+    box-shadow: 0 0 30px 2px #f7b527;
+    border-radius: 50%;
+}
+
+#contato{
+    background-color: #090009;
+    color: #f7b527;
+}
+#card-endereco{
+    box-shadow: 0 0 30px 2px #149ddd;
+    background-color: #090009;
+}
+#card-contact{
+    box-shadow: 0 0 30px 2px #f7b527;
+    background-color: #090009;
+}
+.card-body{
+background-color:#090009;
 }
 i.menu-mobile{
     position: fixed;
-    color: #021124;
-    background-color: #fff;
+    color: #fff;
+    background-color: #f7b527;
     right: 1rem;
     top: 1rem;
     font-size: 1.5rem;
@@ -182,17 +264,9 @@ i.menu-mobile{
     width: 80%;
     height: auto;
     left: 15%;
-    top:0;
-   
-    
+    top:0;   
 }
-.tagcloud{
-    
-position: absolute;
 
-
-   
-}
 ul {
     display: inline-block;
 }
@@ -212,6 +286,7 @@ a:hover {
     top:0%;
     left: 10%;
     font-size: 20px;
+    position: absolute;
    
 }
 
@@ -220,6 +295,9 @@ a:hover {
     background-color: transparent;
     border: 1px solid transparent;
     cursor: pointer;
+    color: #fff;
+    
+    
 }
 /* tag cloud*/
 
@@ -253,26 +331,25 @@ a:hover {
 }
 *::-webkit-scrollbar-track{
     width: 12px;
-    box-shadow: inset 0 0 .3rem #00000050;
-    background-color: #fff;
+    box-shadow: inset 0 0 .3rem #f7b527;
+    background-color: #090009;
 }
 *::-webkit-scrollbar-thumb{
-    background-color: #021124;
+    background-color: #f7b527;
     border-radius: 10px;
 }
 .section-bg{
-    background-color: #dbe6f9;
+    background-color: #f7b527;
 }
 .progress-bar{
-   background-color: #071a31;
+   background-color: #090009;
 
 }
 
 .cv .cv-title{
     font-weight: 700;
-    margin-top: 20px;
     margin-bottom:20px;
-    color:#050d18;
+    color:#f7b527;
 
 }
 .cv .cv-item{
@@ -284,19 +361,21 @@ a:hover {
 }
 .cv .cv-item h4{
     line-height: 25px;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-weight: 300;
+    text-transform:none;
     font-family: "poppins", sans-serif;
-    color: #050d18;
+    color: #f7b527;
     margin-bottom:10px;
+    
   
 }
 .cv .cv-item h5{
-    background-color: #e4edf9;
+    
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
     margin-bottom: 10px;
+    color:#149DDD;
 }
 .cv-item::before{
     content:'';
@@ -375,7 +454,7 @@ a:hover {
     width:300px;
     height: 50px;
     z-index: 9999;
-    background-color: rgb(2, 17, 36);
+    background-color: #090009;
     transition: .3s;
     
    
@@ -393,18 +472,54 @@ a:hover {
     margin:0;
     padding: 0;
     overflow-x:hidden;
+    background-color: transparent;
+   
 }
 h1.intro{
     position:absolute;
-    top:6em;
-    left:8em;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3em;
-    text-transform: uppercase;
-    line-height: 1em;
-    border: 3px solid rgb(2, 17, 36);
-    padding:  .2em;
+    letter-spacing: 10px;
+    color:#f7b527;
+   top: 50%;
+   left: 0%;
+    width:100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient( transparent,#0004);
+    line-height: 0.70em;
+    outline:none;
+    animation: animate 5s linear infinite;
+    
+}
 
+h2#about, #habilidades h2, #Curriculum h2, #portefolio h2, #contato h2{
+    font-size: 2em;
+    letter-spacing: 10px;
+    color:#f7b527;
+   -webkit-box-reflect: below 1px linear-gradient( transparent,#0004);
+    line-height: 0.70em;
+    outline:none;
+    animation: animate 5s linear infinite; 
+}
+
+
+
+@keyframes animate
+{   
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+{
+    color:#0e3742;
+    text-shadow: none;
+}
+18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+{
+    color:#fff;
+    text-shadow:0 0 10px #f7b527,
+    0 0 20px #f7b527,
+    0 0 40px #f7b527,
+    0 0 80px #f7b527,
+    0 0 160px #f7b527;
+
+}
 }
 
 
@@ -416,12 +531,10 @@ h1.intro{
         padding: 0px 15px;
     }
     .banner h1.intro{
-        font-size: 3rem;
-        display: flex;
         top:30%;
-        left:10%;
-        width: 300px;
-        font-size: 2rem;
+        left:0%;
+        width: 100px;
+        font-size:1.2rem;
 
     }
     
@@ -440,8 +553,16 @@ h1.intro{
   left:0;
  
 }
+h1.intro{
+    width: 100% !important;
+    height: auto;
+}
 }
 #A,#G,#W,#S,#C,#E,#P{
-    color:rgb(167, 6, 6);
+    color:#149ddd;
+    text-shadow: 1px 5px 1px rgb(247, 181, 39),1px 5px 1px rgb(0, 89, 231),
+    1px 5px 1px rgb(0, 47, 255),1px 5px 1px rgb(0, 89, 255);
+    font-size: 50px;
+    
 }
  
