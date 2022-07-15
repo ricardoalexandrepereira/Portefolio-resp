@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Lora:ital,wght@1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
 html, body{
     font-family: 'Lora', serif;
     width: 100%;
@@ -164,8 +166,32 @@ section#inicio div#arraste a{
     
     background: linear-gradient(to left,#f7b527,#090009);
     color:#fff;
+    
 }
 
+
+
+#space{
+    width: 40%;
+    text-align: center;   
+}
+
+#imgspace{
+    width: 80%;
+    height:70%;
+    transform: scale(.9);
+    object-fit: contain;
+    animation: space 2s linear infinite alternate-reverse
+    
+}
+@keyframes space {
+    0%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
 
 #Curriculum{
     background-color: #090009;
@@ -220,7 +246,7 @@ section#inicio div#arraste a{
     background-color: #090009;
 }
 #card-contact{
-    box-shadow: 0 0 30px 2px #f7b527;
+    box-shadow: 0 0 30px 2px #149ddd;
     background-color: #090009;
 }
 .card-body{
@@ -319,6 +345,7 @@ a:hover {
         margin-right: 0;
         font-size: 1rem;
     }
+  
     #main{
         margin-left: 0;
     }
@@ -488,17 +515,36 @@ h1.intro{
     line-height: 0.70em;
     outline:none;
     animation: animate 5s linear infinite;
-    
+   font-family: 'Amatic SC', cursive;
+   font-weight: bold;
+}
+.introp{
+    position:absolute;
+    font-size:2em;
+    letter-spacing: 10px;
+    color:#f7b527;
+   top: 60%;
+   left: 0%;
+    width:100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient( transparent,#0004);
+    line-height: 0.70em;
+    outline:none;
+    animation: animate 5s linear infinite;  
+    font-family: 'Amatic SC', cursive;
 }
 
 h2#about, #habilidades h2, #Curriculum h2, #portefolio h2, #contato h2{
-    font-size: 2em;
+    font-size: 4em;
     letter-spacing: 10px;
     color:#f7b527;
    -webkit-box-reflect: below 1px linear-gradient( transparent,#0004);
     line-height: 0.70em;
     outline:none;
     animation: animate 5s linear infinite; 
+    font-family: 'Amatic SC', cursive;
+    font-size: bold;
+    
 }
 
 
@@ -523,7 +569,7 @@ h2#about, #habilidades h2, #Curriculum h2, #portefolio h2, #contato h2{
 }
 
 
-@media (max-width:1012px){
+@media (max-width:1024px){
     #footer{
         
         position: static;
@@ -531,11 +577,18 @@ h2#about, #habilidades h2, #Curriculum h2, #portefolio h2, #contato h2{
         padding: 0px 15px;
     }
     .banner h1.intro{
-        top:30%;
+        top:50%;
         left:0%;
         width: 100px;
-        font-size:1.2rem;
+        font-size:2rem;
+        text-align: center;
+        font-family: 'Amatic SC', cursive;
 
+    }
+    p.introp{
+        text-align: center;
+        font-family: 'Amatic SC', cursive;
+        font-size:1.8rem;
     }
     
     }
@@ -553,16 +606,51 @@ h2#about, #habilidades h2, #Curriculum h2, #portefolio h2, #contato h2{
   left:0;
  
 }
+
 h1.intro{
     width: 100% !important;
     height: auto;
-}
-}
-#A,#G,#W,#S,#C,#E,#P{
-    color:#149ddd;
-    text-shadow: 1px 5px 1px rgb(247, 181, 39),1px 5px 1px rgb(0, 89, 231),
-    1px 5px 1px rgb(0, 47, 255),1px 5px 1px rgb(0, 89, 255);
-    font-size: 50px;
+    
+  
     
 }
- 
+}
+#A,#S,#C{
+    font-size: 1em;
+    letter-spacing: 10px;
+    color:#149DDD;
+   -webkit-box-reflect: below 1px linear-gradient( transparent,#0004);
+    line-height: 0.70em;
+    outline:none;
+    font-family: 'Amatic SC', cursive;
+    font-size: bold;
+    
+}
+#G,#W,#P,#E{
+    font-family: 'Amatic SC', cursive;
+    font-size: bold;
+    font-size: 2em;
+    color:#149DDD;
+    
+    
+   
+}
+#web,h3.cv-title{
+    font-family: 'Amatic SC', cursive;
+    font-size: bold;
+    font-size: 2em;
+}
+@media (max-width:765px){
+    #space{
+        width: 100%;
+         
+    }
+    .endereco{
+        display: none;
+        
+    }
+    .email{
+       display: flex;
+       flex-direction: column;
+    }
+}
