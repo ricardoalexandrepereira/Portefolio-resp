@@ -3,10 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 html, body{
-    font-family: 'Lora', serif;
+    font-family: 'Amatic SC', serif;
     width: 100%;
     height: 100%;
     background-color: #090009;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-style: bold;
+    
 }
 .container{
     padding: 0px 100px;
@@ -122,9 +126,13 @@ html, body{
     color:#f7b527;
     
 }
+
 #me ul li,#me2 ul li{
     background-color:#090009;
     color:#f7b527;
+    font-weight:700;
+    font-size: 1.5rem;
+    font-style: bold;
 }
 #me ul li, #me2 ul li {
     color:#84c2df;
@@ -640,7 +648,13 @@ h1.intro{
     font-family: 'Amatic SC', cursive;
     font-size: bold;
     font-size: 2em;
+   
 }
+#web{
+    color: black;
+}
+
+
 @media (max-width:765px){
     #space{
         width: 100%;
@@ -653,5 +667,118 @@ h1.intro{
     .email{
        display: flex;
        flex-direction: column;
+    }
+}
+
+.cardme{
+    position: relative;
+    width:700px;
+    top:50%;
+    left: 50%;
+    height: 350px;
+    margin:50px 0px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+    transform: translate(-50%, -50%);
+    
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #090009;
+
+}
+.circle::before{
+    content: '';
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #5ed8a9;
+    clip-path: circle(130px at center);
+    transition: 0.7s;
+}
+
+.cardme:hover .circle::before{
+    background:#f7b527;
+    clip-path: circle(700px at center);
+    border-radius: 20px;
+}
+.cardme img{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.cardme:hover img{
+    left: 72%;
+    height:450px;
+   
+
+}
+
+
+.cardme .content{
+position: relative;
+width: 50%;
+left: 20%;
+padding: 50px 20px 20px 40px;
+transition: 0.5s;
+opacity: 0;
+visibility: hidden;
+
+}
+
+.cardme:hover .content{
+    left:0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.cardme .content h2{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-bottom: 5px;
+    line-height: 1em;
+}
+.cardme .content p{
+    color: #000;
+    font-size: 1.1em;
+    font-weight: 600;
+    font-style: bold;
+}
+
+
+
+@media screen and (max-width: 991px){
+    .cardme{
+        width:100%;
+        max-width: 350px;
+        align-items: flex-start;
+    }
+    .cardme:hover{
+        height: 710px;
+    }
+    .cardme .content{
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+    .cardme:hover img{
+        top:65%;
+        left: 50%;
+        height:450px;
+
     }
 }
