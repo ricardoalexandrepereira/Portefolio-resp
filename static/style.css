@@ -647,7 +647,9 @@ h1.intro{
 #web,h3.cv-title{
     font-family: 'Amatic SC', cursive;
     font-size: bold;
-    font-size: 2em;
+    font-size: 1.7em;
+    
+    
    
 }
 #web{
@@ -701,7 +703,7 @@ h1.intro{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #5ed8a9;
+    background: #63cfd3;
     clip-path: circle(130px at center);
     transition: 0.7s;
 }
@@ -732,7 +734,7 @@ h1.intro{
 position: relative;
 width: 50%;
 left: 20%;
-padding: 50px 20px 20px 40px;
+padding: 10px 20px 20px 40px;
 transition: 0.5s;
 opacity: 0;
 visibility: hidden;
@@ -766,6 +768,7 @@ visibility: hidden;
         width:100%;
         max-width: 350px;
         align-items: flex-start;
+        
     }
     .cardme:hover{
         height: 710px;
@@ -779,6 +782,7 @@ visibility: hidden;
         top:65%;
         left: 50%;
         height:450px;
+        margin-top: 20px;
 
     }
 }
