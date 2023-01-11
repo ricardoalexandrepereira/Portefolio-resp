@@ -3,3 +3,4 @@ todas alterações feitas têm de ser enviado para o heroku da seguinte forma:
 2.run git bash
 3."git push heroku master"
 
+

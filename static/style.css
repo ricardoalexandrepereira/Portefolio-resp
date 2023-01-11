@@ -30,9 +30,10 @@ html, body{
 #header .profile img{
     margin:10px auto;
     display: block;
-    width: 150px;
+    width: 160px;
     /*border: 5px solid #E2740E;*/
     border-radius: 50%;
+    height: 210px;
     
 
 }
@@ -43,6 +44,12 @@ html, body{
     font-weight: 600;
     text-align: center;
     color: #fff;
+}
+.social-links{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #header .profile .social-links a{
@@ -57,13 +64,18 @@ html, body{
     display:inline-block;
     transition: transform 0.5s;
     position: relative;
-    overflow: hidden;   
+    overflow: hidden; 
+    
+    
+    
 
 }
 .social-links a .bi { 
     position: relative;
     z-index: 10;
     transition: 0.5s;
+    
+    
     
     }
 .social-links a::after{
@@ -76,6 +88,8 @@ html, body{
     background-image: linear-gradient(45deg, rgb(248, 247, 247), #149ddd);
     position: absolute;
     transition: 0.5s;
+    
+    
     }
     .social-links a:hover::after{
         margin-top:0;
@@ -178,7 +192,9 @@ section#inicio div#arraste a{
     
 }
 
-
+#spin-container{
+    text-align: center;
+}
 
 #space{
     width: 40%;
@@ -213,6 +229,7 @@ section#inicio div#arraste a{
 }
 .card{
     border:none;
+    
     
 }
 .card input, .card textarea{
@@ -686,6 +703,7 @@ h1.intro{
     transition: 0.5s;
     transform: translate(-50%, -50%);
     
+    
 }
 .circle{
     position: absolute;
@@ -706,6 +724,8 @@ h1.intro{
     background: #63cfd3;
     clip-path: circle(130px at center);
     transition: 0.7s;
+    
+    
 }
 
 .cardme:hover .circle::before{
@@ -715,17 +735,20 @@ h1.intro{
 }
 .cardme img{
     position: absolute;
-    top: 35%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 350px;
     pointer-events: none;
     transition: 0.5s;
+    border-radius:50%;
+    
 }
 .cardme:hover img{
     left: 72%;
+    top:35%;
     height:450px;
-   
+    border-radius:0%;
 
 }
 
@@ -745,6 +768,7 @@ visibility: hidden;
     left:0;
     opacity: 1;
     visibility: visible;
+    
 }
 
 .cardme .content h2{
