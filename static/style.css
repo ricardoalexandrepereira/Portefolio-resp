@@ -198,17 +198,26 @@ section#inicio div#arraste a{
 
 #space{
     width: 40%;
-    text-align: center;   
+    text-align: center;  
+    position: relative; 
 }
 
-#imgspace{
-    width: 80%;
-    height:70%;
-    transform: scale(.9);
+/*  #anchor{
+    width: 100%;
+    height:90%;
+    transform: scale(1.2);
     object-fit: contain;
-    animation: space 2s linear infinite alternate-reverse
+}  */
+    
+
+    
+
+#eyes,#eyes img{
+    position: absolute;
     
 }
+
+
 @keyframes space {
     0%{
         transform: translateY(-40px);
@@ -376,7 +385,9 @@ a:hover {
     #main{
         margin-left: 0;
     }
-   
+    
+    
+    
 }
 
 *::-webkit-scrollbar{
@@ -619,7 +630,8 @@ h2#about, #habilidades h2, #Curriculum h2, #portefolio h2, #contato h2{
         font-size:1.8rem;
     }
     
-    }
+}
+
 
 @media (max-width:900px){
    
@@ -686,8 +698,15 @@ h1.intro{
     .email{
        display: flex;
        flex-direction: column;
+       
+    }
+   
+    #eyes{
+        
+      margin-left: 55px;
     }
 }
+
 
 .cardme{
     position: relative;
