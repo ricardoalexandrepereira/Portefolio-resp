@@ -99,6 +99,9 @@ document.onmousewheel = (e)=>{
 }
 
 
+
+
+
 //cartoon
 document.addEventListener("mousemove", (e)=>{
     const mouseX = e.clientX;
@@ -130,3 +133,44 @@ function angle(cx, cy, ex, ey){
 }
 
 
+var $ = document.querySelector.bind(document);
+var $on = document.addEventListener.bind(document);
+
+var xmouse, ymouse;
+
+$on('mousemove', function (e){
+    xmouse = e.clientX || e.pageX
+    ymouse = e.clientY || e.pageY
+});
+
+var fly = $('#fly');
+var x = void 0,
+    y = void 0,
+    dx = void 0,
+    dy = void 0,
+    tx = 0,
+    tx = 0,
+    key = 0;
+
+    var followMouse = function followMouse(){
+        key = requestAnimationFrame(followMouse);
+
+
+        if(!x || !y){
+            x = xmouse;
+            y = ymouse;
+        }else{
+            dx = (xmouse - x) * 0.125;
+            dy = (ymouse - y) * 0.125;
+            if(Math.abs(dx) + Math.abs(dy) < 0.5){
+                x = xmouse;
+                y = ymouse;
+            }else{
+                x += dx;
+                y +=dy;
+            }
+        }
+
+        fly.style.left = x + 'px';
+        fly.style.top = y + 'px';
+    }

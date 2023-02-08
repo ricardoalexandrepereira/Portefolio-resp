@@ -179,3 +179,5 @@ var tc = TagCloud('.Sphere', texts,{
 });
 var color = '#071a31'
 document.querySelector('.Sphere').style.color = color
+
+
