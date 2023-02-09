@@ -164,7 +164,7 @@ window.addEventListener('mousemove', onMouseMove)
 var texts = [
     'HTML', 'CSS', 'JAVASCRIPT',
     'BOOTSTRAP', 'NODE js', 'SASS',
-    'EJS', 'HANDLEBARS', 'MONGO DB',
+    'EJS', 'TAILWIND', 'HANDLEBARS', 'MONGO DB',
     'REACT js', 'FIGMA' , 'WORDPRESS', 
     'GIT', 'EXPRESS', 'FIREBASE'
 ];

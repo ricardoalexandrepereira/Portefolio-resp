@@ -212,13 +212,28 @@ section#inicio div#arraste a{
     object-fit: contain;
 }   */
     
+#anchor{
 
-
-#eyes,#eyes img{
-    position: absolute;
-    
+    position: relative;
+    min-width: 350px;
 }
 
+
+#eyeleft{
+    position: absolute;
+    top: 31%; 
+    right:42%;
+    transform: translate(-31%, -42%);
+    width: 40px;
+}
+
+#eyeright{
+    position: absolute;
+    width: 26px; 
+    top: 35%; 
+    right:28% ;
+    transform: translate(-35%, -28%);
+}
 /* 
 @keyframes space {
     0%{
@@ -703,12 +718,18 @@ h1.intro{
        
     }
    
-    #eyes{
+ /*    #eyes{
         
-      margin-left: 55px;
-    }
+      margin-left: 34px;
+    } */
 }
-
+@media screen and (max-width:375px){
+    body{
+        overflow-x: hidden;
+    }
+   
+    
+}
 
 .cardme{
     position: relative;
