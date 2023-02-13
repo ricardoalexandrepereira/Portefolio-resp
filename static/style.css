@@ -221,17 +221,17 @@ section#inicio div#arraste a{
 
 #eyeleft{
     position: absolute;
-    top: 31%; 
+    top: 34%; 
     right:42%;
     transform: translate(-31%, -42%);
-    width: 40px;
+    width: 25px;
 }
 
 #eyeright{
     position: absolute;
-    width: 26px; 
+    width: 19px; 
     top: 35%; 
-    right:28% ;
+    right:29% ;
     transform: translate(-35%, -28%);
 }
 /* 
