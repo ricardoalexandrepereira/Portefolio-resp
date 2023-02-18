@@ -174,3 +174,12 @@ var x = void 0,
         fly.style.left = x + 'px';
         fly.style.top = y + 'px';
     }
+
+    //initializing loader 
+    const preLoader = document.getElementById('pre-loader');
+
+    window.addEventListener('load',()=>{
+        preLoader.style.display = 'none';
+    })
+     
+    
