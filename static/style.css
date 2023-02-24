@@ -209,10 +209,13 @@ section#inicio div#arraste a{
 }
 
 #space{
-    width: 40%;
+    min-width: 400px;
+    max-width: 300px;
     text-align: center;  
     position: relative; 
     padding-top: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -229,22 +232,29 @@ section#inicio div#arraste a{
     position: relative;
     min-width: 350px;
 }
-
+#eyes{
+        
+    width: 100%;
+    height: 100%;
+    position: relative;
+  } 
 
 #eyeleft{
     position: absolute;
-    top: 30%; 
-    right:38%;
+    top: 27%; 
+    right:37%;
     transform: translate(-31%, -42%);
     width: 17px;
+    
 }
 
 #eyeright{
     position: absolute;
     width: 10px; 
-    top: 29%; 
-    right:18% ;
+    top: 27%; 
+    right:16% ;
     transform: translate(-35%, -28%);
+    
 }
 /* 
 @keyframes space {
@@ -715,25 +725,28 @@ h1.intro{
 }
 
 
-@media (max-width:765px){
-    #space{
-        width: 100%;
+ @media (max-width:416px){
+     #eyeleft{
+        top: 30%; 
+    right:37%;
+    transform: translate(-31%, -42%);
+    width: 17px;
          
-    }
-    .endereco{
-        display: block;
+    } 
+    #eyeright{
+        width: 10px; 
+    top: 29%; 
+    right:16% ;
+    transform: translate(-35%, -28%);
         
     }
     .email{
        display: flex;
        flex-direction: column;
        
-    }
+    } 
    
- /*    #eyes{
-        
-      margin-left: 34px;
-    } */
+    
 }
 @media screen and (max-width:375px){
     body{
