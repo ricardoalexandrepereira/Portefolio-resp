@@ -44,13 +44,13 @@ window.addEventListener('scroll', ()=>{
 
 /*ativar o loading*/
 
-const btnEnviar = document.querySelector('#btn-enviar');
+/* const btnEnviar = document.querySelector('#btn-enviar');
 const loader = document.querySelector('#btn-enviar-loader')
 
 btnEnviar.addEventListener('click',()=>{
     loader.style.display = 'block';
     btnEnviar.style.display = 'none';
-})
+}) */
 
 /*retirar mensagem depois de 5segundos*/
 
