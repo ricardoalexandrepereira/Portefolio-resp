@@ -32,6 +32,11 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/works')
+def works():
+    return render_template('works.html')
+
+
 @app.route('/send', methods=['GET','POST'])
 def send():
     if request.method == 'POST':

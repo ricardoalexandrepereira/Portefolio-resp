@@ -8,7 +8,7 @@ setTimeout(init, 1000);
 
 var odrag = document.getElementById('drag-container');
 var ospin = document.getElementById('spin-container');
-var aImg = document.querySelectorAll('.ancora');
+var aImg = document.querySelectorAll('.anc');
 var aVid = document.getElementsByTagName('video');
 
 
@@ -103,11 +103,13 @@ document.onmousewheel = (e)=>{
 
 
 //cartoon
+
+
 document.addEventListener("mousemove", (e)=>{
     const mouseX = e.clientX;
     const mouseY = e.clientY;
 
-    const cartoon = document.querySelector("#anchor")
+    const cartoon = document.querySelector("#anchoragem")
     const rekt = cartoon.getBoundingClientRect();
     const cartoonX = rekt.left + rekt.width / 2;
     const cartoonY = rekt.top + rekt.height / 2;
@@ -183,3 +185,4 @@ var x = void 0,
     })
      
     
+   
