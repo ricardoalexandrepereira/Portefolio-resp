@@ -153,6 +153,9 @@ html, body{
     color:#f7b527;
     
 }
+#sobre p{
+    font-size: 1.4rem;
+}
 
 #me ul li,#me2 ul li{
     background-color:#090009;
@@ -342,6 +345,7 @@ i.menu-mobile{
     height: 50px;
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 .menu-nav-active {
@@ -657,6 +661,10 @@ h2#about, #habilidades h2, #Curriculum h2, #portefolio h2, #contato h2{
         width: auto;
         padding: 0px 15px;
     }
+    .banner .introp{
+        padding: 0 5px;
+       font-size: 1.2rem;
+    }
     .banner h1.intro{
         top:50%;
         
@@ -852,8 +860,8 @@ visibility: hidden;
 }
 .cardme .content p{
     color: #000;
-    font-size: 1.1em;
-    font-weight: 600;
+    font-size: 1.5em;
+    font-weight: 800;
     font-style: bold;
 }
 
@@ -941,6 +949,16 @@ visibility: hidden;
     border-radius: 20px;
 }
 
+/* .transition-1::after{
+    content:url(./img/logoDigital.png);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    color: white;
+    z-index: 999;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+} */
 
 
    .transition-1{
@@ -951,19 +969,24 @@ visibility: hidden;
     border-right: 3px solid #f7b527;
     z-index: 999;
     position: fixed;
-    background-color: #090009;
+    background: #090009;
     pointer-events: none;
     transition: 0.5s ease-out;
+    
   }
 
   .transition-1.is-active{
     pointer-events: all;
     left: 0px;
+    
   }
  
   @media screen and (max-width: 700px){
     #next{
         display:none
         
+    }
+    .cardme .content p{
+        font-size: 1.2rem;
     }
 }
