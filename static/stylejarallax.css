@@ -423,3 +423,14 @@ section:nth-child(even) .container .content{
                 padding: 0 50px;
             }
     }
+
+    
+
+    .box .content a{
+        padding: 8px 10px;
+        text-decoration: none;
+        background: #f7b527;
+        color: #fff;
+        border-radius: 10px;
+       
+    }
