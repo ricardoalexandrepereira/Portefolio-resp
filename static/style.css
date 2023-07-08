@@ -980,7 +980,95 @@ visibility: hidden;
     left: 0px;
     
   }
- 
+
+
+  /* pophover window */
+ button#cvcor{
+    padding: 10px 35px;
+    position: relative;
+    color: #f7b527;
+    justify-content: center;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    border: 1px solid #f7b527;
+    outline: none;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 1%;
+    transition: all 1s ease;
+    width: 300px;
+    display: flex;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#090009 ;
+  }
+  button#cvcor a{
+    text-decoration: none;
+    color:#f7b527;
+    transition: all .5s ease-in-out;
+    padding: 0 15px;
+    border:.5px solid #f7b527;
+    width: 100%;
+    
+  }
+
+
+  button#cvcor a:hover{
+    color:#faf9f7;
+    border-color:  #f7f6f5;
+    background-color: #f7b527;
+    border-radius: 20px;
+}
+
+#popover{
+    text-align: center;
+    max-width: 350px;
+    height: 70%;
+    margin-top: 8%;
+    background-color:#090009 ;
+}
+#popover h2{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    color:#fff;
+    font-size: 1.9rem!important;
+    line-height: 30px;
+}
+#popover img{
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+#popover::backdrop{
+    background: rgba(0, 0, 0, 0.8);
+}
+.popovercontent{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+.popovercontent i{
+    color: white;
+}
+
+.popovercontent h1{
+    color: #fff;
+    margin-top: 10px;
+}
+
+#cvcor a{
+    text-decoration: none;
+    color:white;
+    transition: all .5s ease;
+}
+#cvcor a:hover{
+    color: #f7b527;
+}
+
+ /* pophover window */
   @media screen and (max-width: 700px){
     #next{
         display:none
